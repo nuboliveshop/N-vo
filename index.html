@@ -4,59 +4,31 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="images/logo-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Nubo Shop - Marketplace de Compra y Venta en Línea</title>
-    <meta name="description" content="Nubo Shop es tu marketplace de confianza para comprar y vender productos de calidad.">
-    <meta name="author" content="Nubo Shop - Grupo Gold Life">
-    <link rel="canonical" href="https://nuboshop.com/">
-    
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nuboshop.com/">
-    <meta property="og:title" content="Nubo Shop - Marketplace">
-    <meta property="og:image" content="images/og-image.png">
-    
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:image" content="images/og-image.png">
+    <title>Nubo Shop - Marketplace</title>
     
     <link href="css/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" crossorigin href="css/style.css">
 
     <style>
-        /* BLOQUEADOR ANT-AI: Oculta cualquier residuo de publicidad de Readdy */
-        [class*="readdy"], 
-        [id*="readdy"], 
-        .readdy-badge, 
-        #readdy-root,
-        iframe[src*="readdy.ai"] {
+        /* Bloqueador de rastros de Readdy */
+        [class*="readdy"], [id*="readdy"], .readdy-badge {
             display: none !important;
-            visibility: hidden !important;
-            opacity: 0 !important;
-            pointer-events: none !important;
-            z-index: -9999 !important;
         }
     </style>
 </head>
 <body>
-    
     <div id="root"></div>
 
-    <script type="module" crossorigin src="js/main.js"></script>
+    <script type="module" crossorigin src="js/index-LZ9nlL1t.js"></script>
 
     <script>
-        /* LIMPIEZA FORZADA DE DOM: Borra elementos inyectados por scripts externos */
-        const cleanProject = () => {
-            const elements = document.querySelectorAll('[class*="readdy"], [id*="readdy"], a[href*="readdy.ai"]');
-            elements.forEach(el => el.remove());
-        };
-
-        // Ejecutar limpieza al cargar y cada 2 segundos por si la IA intenta reaparecer
-        window.addEventListener('DOMContentLoaded', cleanProject);
-        setInterval(cleanProject, 2000);
+        // Limpiador automático de publicidad
+        setInterval(() => {
+            document.querySelectorAll('[class*="readdy"], [id*="readdy"]').forEach(el => el.remove());
+        }, 1000);
     </script>
-
 </body>
 </html>
